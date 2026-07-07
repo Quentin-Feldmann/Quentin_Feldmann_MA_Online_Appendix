@@ -72,5 +72,301 @@ $$
 \par\endgroup
 $$
 
+<Table A2: Baseline regressions with single month lag>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
+   Model:                                        & (1)            & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   lag18                                         & 0.0154$^{***}$ & 0.0151$^{***}$\\   
+                                                 & (0.0044)       & (0.0039)\\   
+   lag18 $\times$ glot                           & -0.0058        & 0.0142\\   
+                                                 & (0.0123)       & (0.0100)\\   
+   lag18 $\times$ distance\_to\_port\_1000km     & 0.0018         & -0.0116$^{***}$\\   
+                                                 & (0.0064)       & (0.0041)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                          & Yes            & Yes\\  
+   year-country                                  & Yes            & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                   & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                  & 551,347        & 327,704\\  
+   R$^2$                                         & 0.91481        & 0.89134\\  
+   Within R$^2$                                  & 0.00113        & 0.00207\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+<Table A3: Baseline regressions with alternative fixed effects (full sample)>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{asinh(city\_lights)}\\
+   Model:                                            & (1)             & (2)            & (3)             & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   avg2\_17                                          & 0.0130$^{***}$  & 0.0184$^{***}$ & 0.0193$^{***}$  & 0.0181$^{***}$\\   
+                                                     & (0.0048)        & (0.0041)       & (0.0044)        & (0.0041)\\   
+   avg2\_17 $\times$ glot                            & -0.0080         & -0.0083        & -0.0095         & -0.0088\\   
+                                                     & (0.0083)        & (0.0118)       & (0.0075)        & (0.0117)\\   
+   avg2\_17 $\times$ distance\_to\_port\_1000km      & -0.0118$^{***}$ & 0.0013         & -0.0126$^{***}$ & 0.0016\\   
+                                                     & (0.0042)        & (0.0067)       & (0.0042)        & (0.0065)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                              & Yes             & Yes            & Yes             & Yes\\  
+   year                                              & Yes             &                & Yes             & \\  
+   year-country                                      &                 & Yes            &                 & Yes\\  
+   month                                             &                 &                & Yes             & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                       & Yes             &                &                 & \\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                      & 551,347         & 551,347        & 551,347         & 551,347\\  
+   R$^2$                                             & 0.90957         & 0.89961        & 0.89035         & 0.90282\\  
+   Within R$^2$                                      & 0.01913         & 0.00117        & 0.01948         & 0.00119\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+<Table A4: Baseline regressions with alternative fixed effects (PPC sample)>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{asinh(city\_lights)}\\
+   Model:                                            & (1)      & (2)             & (3)            & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   avg2\_17                                          & 0.0107   & 0.0222$^{***}$  & 0.0207$^{***}$ & 0.0194$^{***}$\\   
+                                                     & (0.0066) & (0.0040)        & (0.0058)       & (0.0040)\\   
+   avg2\_17 $\times$ glot                            & -0.0007  & 0.0120          & 0.0005         & 0.0103\\   
+                                                     & (0.0131) & (0.0105)        & (0.0113)       & (0.0108)\\   
+   avg2\_17 $\times$ distance\_to\_port\_1000km      & -0.0125  & -0.0174$^{***}$ & -0.0158$^{*}$  & -0.0161$^{***}$\\   
+                                                     & (0.0096) & (0.0034)        & (0.0081)       & (0.0034)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                              & Yes      & Yes             & Yes            & Yes\\  
+   year                                              & Yes      &                 & Yes            & \\  
+   year-country                                      &          & Yes             &                & Yes\\  
+   month                                             &          &                 & Yes            & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                       & Yes      &                 &                & \\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                      & 327,704  & 327,704         & 327,704        & 327,704\\  
+   R$^2$                                             & 0.88831  & 0.87208         & 0.87121        & 0.87681\\  
+   Within R$^2$                                      & 0.00265  & 0.00276         & 0.00683        & 0.00223\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+<Table A5: Baseline regressions with scaled explanatory variables>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
+   Model:                                              & (1)             & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   avg2\_17N                                           & 0.0666$^{***}$  & 0.0922$^{***}$\\   
+                                                       & (0.0047)        & (0.0062)\\   
+   avg2\_17N $\times$ glotN                            & -0.0004         & -0.0039\\   
+                                                       & (0.0044)        & (0.0055)\\   
+   avg2\_17N $\times$ distance\_to\_port\_1000kmN      & -0.0197$^{***}$ & -0.0187$^{**}$\\   
+                                                       & (0.0064)        & (0.0073)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                                & Yes             & Yes\\  
+   year-country                                        & Yes             & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                         & Yes             & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                        & 551,347         & 327,704\\  
+   R$^2$                                               & 0.91482         & 0.89132\\  
+   Within R$^2$                                        & 0.00120         & 0.00192\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+  
+<Table A6: Effect of removing cities with zero glot value>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
+   Model:                                            & (1)           & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   avg2\_17                                          & 0.0185$^{**}$ & 0.0257$^{***}$\\   
+                                                     & (0.0074)      & (0.0034)\\   
+   avg2\_17 $\times$ glot                            & -0.0077       & 0.0004\\   
+                                                     & (0.0151)      & (0.0045)\\   
+   avg2\_17 $\times$ distance\_to\_port\_1000km      & 0.0038        & -0.0095$^{***}$\\   
+                                                     & (0.0053)      & (0.0030)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                              & Yes           & Yes\\  
+   year-country                                      & Yes           & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                       & Yes           & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                      & 493,129       & 282,327\\  
+   R$^2$                                             & 0.90976       & 0.88212\\  
+   Within R$^2$                                      & 0.00152       & 0.00232\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+  
+<Table A7: Effect of alternative CTOT lags on large cities>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcccccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{6}{c}{asinh(city\_lights)}\\
+   Model:                                            & (1)      & (2)      & (3)      & (4)      & (5)          & (6)\\  
+   \midrule
+   \emph{Variables}\\
+   avg6\_15                                          & 0.0062   & 0.0075   &          &          &              &   \\   
+                                                     & (0.0039) & (0.0046) &          &          &              &   \\   
+   avg6\_15 $\times$ glot                            & 0.0036   & 0.0018   &          &          &              &   \\   
+                                                     & (0.0069) & (0.0078) &          &          &              &   \\   
+   avg6\_15 $\times$ distance\_to\_port\_1000km      & -0.0031  & -0.0031  &          &          &              &   \\   
+                                                     & (0.0060) & (0.0076) &          &          &              &   \\   
+   avg2\_9                                           &          &          & 0.0007   & 0.0022   &              &   \\   
+                                                     &          &          & (0.0028) & (0.0030) &              &   \\   
+   avg2\_9 $\times$ glot                             &          &          & -0.0053  & -0.0071  &              &   \\   
+                                                     &          &          & (0.0075) & (0.0086) &              &   \\   
+   avg2\_9 $\times$ distance\_to\_port\_1000km       &          &          & -0.0034  & -0.0030  &              &   \\   
+                                                     &          &          & (0.0061) & (0.0082) &              &   \\   
+   avg3\_5                                           &          &          &          &          & 0.0048$^{*}$ & 0.0045\\   
+                                                     &          &          &          &          & (0.0027)     & (0.0029)\\   
+   avg3\_5 $\times$ glot                             &          &          &          &          & -0.0090      & -0.0073\\   
+                                                     &          &          &          &          & (0.0066)     & (0.0076)\\   
+   avg3\_5 $\times$ distance\_to\_port\_1000km       &          &          &          &          & 0.0032       & -0.0011\\   
+                                                     &          &          &          &          & (0.0055)     & (0.0073)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                              & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
+   year-country                                      & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                       & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                      & 46,843   & 28,182   & 46,843   & 28,182   & 46,843       & 28,182\\  
+   R$^2$                                             & 0.89885  & 0.90021  & 0.89886  & 0.90024  & 0.89885      & 0.90021\\  
+   Within R$^2$                                      & 0.00023  & 0.00044  & 0.00041  & 0.00073  & 0.00030      & 0.00050\\  
+   \midrule \midrule
+   \multicolumn{7}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+<Table A8: Language distance heterogeneity - six-month average>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{asinh(city\_lights)}\\
+   Model:                                                   & (1)            & (2)             & (3)            & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   avg6\_15                                                 & 0.0097$^{***}$ & 0.0862$^{***}$  & 0.0083$^{***}$ & 0.0852$^{***}$\\   
+                                                            & (0.0020)       & (0.0084)        & (0.0027)       & (0.0084)\\   
+   avg6\_15 $\times$ glot                                   & 0.0014         & -0.0442$^{***}$ & -0.0072        & -0.0475$^{***}$\\   
+                                                            & (0.0066)       & (0.0106)        & (0.0071)       & (0.0118)\\   
+   avg6\_15 $\times$ asinh(distance\_to\_port\_1000km)      & -0.0104$^{**}$ & -0.0224$^{***}$ & -0.0017        & -0.0180$^{**}$\\   
+                                                            & (0.0048)       & (0.0052)        & (0.0047)       & (0.0075)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                                     & Yes            & Yes             & Yes            & Yes\\  
+   year-country                                             & Yes            & Yes             & Yes            & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                              & Yes            & Yes             & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                             & 246,523        & 304,824         & 159,536        & 168,168\\  
+   R$^2$                                                    & 0.91569        & 0.91600         & 0.91968        & 0.85189\\  
+   Within R$^2$                                             & 0.00070        & 0.00353         & 0.00057        & 0.00493\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+<Table A9: Effect of different language families - six-month average>
+$$
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
+   Model:                                            & (1)            & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   avg6\_15                                          & 0.0146$^{***}$ & 0.0197$^{***}$\\   
+                                                     & (0.0033)       & (0.0047)\\   
+   avg6\_15 $\times$ glot                            & -0.0113$^{*}$  & -0.0163$^{***}$\\   
+                                                     & (0.0063)       & (0.0044)\\   
+   avg6\_15 $\times$ distance\_to\_port\_1000km      & 0.0022         & 0.0004\\   
+                                                     & (0.0050)       & (0.0077)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                              & Yes            & Yes\\  
+   year-country                                      & Yes            & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                       & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                      & 551,347        & 327,704\\  
+   R$^2$                                             & 0.91486        & 0.89136\\  
+   Within R$^2$                                      & 0.00168        & 0.00226\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+  
 </body>
 </html>
