@@ -204,46 +204,129 @@ $$
 \end{tabular}
 \par
 \end{table}
-$$
-  
-$$
-\begin{table}[ht]
-\centering
-\footnotesize
-\caption{Table A6: Effect of removing cities with zero glot value}
-\begin{tabular}{lcc}
-   \tabularnewline \midrule \midrule
-   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
-   Model:                                            & (1)           & (2)\\  
-   \midrule
-   \emph{Variables}\\
-   avg2\_17                                          & 0.0185$^{**}$ & 0.0257$^{***}$\\   
-                                                     & (0.0074)      & (0.0034)\\   
-   avg2\_17 $\times$ glot                            & -0.0077       & 0.0004\\   
-                                                     & (0.0151)      & (0.0045)\\   
-   avg2\_17 $\times$ distance\_to\_port\_1000km      & 0.0038        & -0.0095$^{***}$\\   
-                                                     & (0.0053)      & (0.0030)\\   
-   \midrule
-   \emph{Fixed-effects}\\
-   city                                              & Yes           & Yes\\  
-   year-country                                      & Yes           & Yes\\  
-   \midrule
-   \emph{Varying Slopes}\\
-   year (city)                                       & Yes           & Yes\\  
-   \midrule
-   \emph{Fit statistics}\\
-   Observations                                      & 493,129       & 282,327\\  
-   Sample                                            & full sample & PPC sample\\
-   R$^2$                                             & 0.90976       & 0.88212\\  
-   Within R$^2$                                      & 0.00152       & 0.00232\\  
-   \midrule \midrule
-   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
-   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
-\end{tabular}
-\par
-\end{table}
-$$
-  
+
+<div style="height : 40px; "></div>
+   
+<table>
+<caption>Table A6: Effect of removing cities with zero glot
+value</caption>
+<tbody>
+<tr>
+<td style="text-align: left;">Dependent Variable:</td>
+<td colspan="2" style="text-align: center;">asinh(city_lights)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Model:</td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Variables</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT</td>
+<td style="text-align: center;">0.0185<span
+class="math inline"><sup>**</sup></span></td>
+<td style="text-align: center;">0.0257<span
+class="math inline"><sup>* * *</sup></span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0074)</td>
+<td style="text-align: center;">(0.0034)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+glot</td>
+<td style="text-align: center;">-0.0077</td>
+<td style="text-align: center;">0.0004</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0151)</td>
+<td style="text-align: center;">(0.0045)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+road_distance</td>
+<td style="text-align: center;">0.0038</td>
+<td style="text-align: center;">-0.0095<span
+class="math inline"><sup>* * *</sup></span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0053)</td>
+<td style="text-align: center;">(0.0030)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Fixed-effects</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">city</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">year-country</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Varying Slopes</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">year (city)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Fit statistics</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">493,129</td>
+<td style="text-align: center;">282,327</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sample</td>
+<td style="text-align: center;">full sample</td>
+<td style="text-align: center;">PPC sample</td>
+</tr>
+<tr>
+<td style="text-align: left;">R<span
+class="math inline"><sup>2</sup></span></td>
+<td style="text-align: center;">0.90976</td>
+<td style="text-align: center;">0.88212</td>
+</tr>
+<tr>
+<td style="text-align: left;">Within R<span
+class="math inline"><sup>2</sup></span></td>
+<td style="text-align: center;">0.00152</td>
+<td style="text-align: center;">0.00232</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: left;"><em>Clustered (city)
+standard-errors in parentheses</em></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: left;"><em>Signif. Codes: ***: 0.01,
+**: 0.05, *: 0.1</em></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: left;"><em>CTOT is the average of the 17- to 18-months lagged terms of trade index.</em></td>
+</tr>   
+</tbody>
+</table>
+
+<div style="height : 40px; "></div>
 
 <table>
 <caption>Table A7: Effect of alternative CTOT lags on large
@@ -541,16 +624,15 @@ standard-errors in parentheses</em></td>
 **: 0.05, *: 0.1</em></td>
 </tr>
 <tr>
-<td colspan="7" style="text-align: left;"><em>In the first two models, CTOT is the average of the 15- to 20-months lagged terms of trade index. In the third and fourth columns it uses the average of the nine- to ten-months lag instead.</em></td>
+<td colspan="7" style="text-align: left;"><em>In the first two models, CTOT is the average of the 15- to 20-months lagged terms of trade index. In the third and fourth columns it uses the average</em></td>
 </tr>   
 <tr>
-<td colspan="7" style="text-align: left;"><em>In the last two columns it uses the average of the five- to seven-months lag</em></td>
+<td colspan="7" style="text-align: left;"><em>of the nine- to ten-months lag instead. In the last two columns it uses the average of the five- to seven-months lag</em></td>
 </tr>    
 </tbody>
 </table>
 
-
-
+<div style="height : 40px; "></div>
 
 <table>
 <caption>Table A8: Language distance heterogeneity - six-month
@@ -713,7 +795,7 @@ standard-errors in parentheses</em></td>
 </tbody>
 </table>
 
-<div style="height : 40px; "></div>div>
+<div style="height : 40px; "></div>
 
 <table>
 <caption>Table A9: Effect of different language families - six-month
