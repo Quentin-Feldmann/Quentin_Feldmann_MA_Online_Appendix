@@ -244,55 +244,311 @@ $$
 \end{table}
 $$
   
-$$
-\begin{table}[ht]
-\centering
-\footnotesize
-\caption{Table A7: Effect of alternative CTOT lags on large cities}
-\begin{tabular}{lcccccc}
-   \tabularnewline \midrule \midrule
-   Dependent Variable: & \multicolumn{6}{c}{asinh(city\_lights)}\\
-   Model:                                            & (1)      & (2)      & (3)      & (4)      & (5)          & (6)\\  
-   \midrule
-   \emph{Variables}\\
-   avg6\_15                                          & 0.0062   & 0.0075   &          &          &              &   \\   
-                                                     & (0.0039) & (0.0046) &          &          &              &   \\   
-   avg6\_15 $\times$ glot                            & 0.0036   & 0.0018   &          &          &              &   \\   
-                                                     & (0.0069) & (0.0078) &          &          &              &   \\   
-   avg6\_15 $\times$ distance\_to\_port\_1000km      & -0.0031  & -0.0031  &          &          &              &   \\   
-                                                     & (0.0060) & (0.0076) &          &          &              &   \\   
-   avg2\_9                                           &          &          & 0.0007   & 0.0022   &              &   \\   
-                                                     &          &          & (0.0028) & (0.0030) &              &   \\   
-   avg2\_9 $\times$ glot                             &          &          & -0.0053  & -0.0071  &              &   \\   
-                                                     &          &          & (0.0075) & (0.0086) &              &   \\   
-   avg2\_9 $\times$ distance\_to\_port\_1000km       &          &          & -0.0034  & -0.0030  &              &   \\   
-                                                     &          &          & (0.0061) & (0.0082) &              &   \\   
-   avg3\_5                                           &          &          &          &          & 0.0048$^{*}$ & 0.0045\\   
-                                                     &          &          &          &          & (0.0027)     & (0.0029)\\   
-   avg3\_5 $\times$ glot                             &          &          &          &          & -0.0090      & -0.0073\\   
-                                                     &          &          &          &          & (0.0066)     & (0.0076)\\   
-   avg3\_5 $\times$ distance\_to\_port\_1000km       &          &          &          &          & 0.0032       & -0.0011\\   
-                                                     &          &          &          &          & (0.0055)     & (0.0073)\\   
-   \midrule
-   \emph{Fixed-effects}\\
-   city                                              & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
-   year-country                                      & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
-   \midrule
-   \emph{Varying Slopes}\\
-   year (city)                                       & Yes      & Yes      & Yes      & Yes      & Yes          & Yes\\  
-   \midrule
-   \emph{Fit statistics}\\
-   Observations                                      & 46,843   & 28,182   & 46,843   & 28,182   & 46,843       & 28,182\\  
-   Sample                                            & full sample & PPC sample & full sample & PPC sample & full sample & PPC sample\\
-   R$^2$                                             & 0.89885  & 0.90021  & 0.89886  & 0.90024  & 0.89885      & 0.90021\\  
-   Within R$^2$                                      & 0.00023  & 0.00044  & 0.00041  & 0.00073  & 0.00030      & 0.00050\\  
-   \midrule \midrule
-   \multicolumn{7}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
-   \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
-\end{tabular}
-\par
-\end{table}
-$$
+
+<table>
+<caption>Table A7: Effect of alternative CTOT lags on large
+cities</caption>
+<tbody>
+<tr>
+<td style="text-align: left;">Dependent Variable:</td>
+<td colspan="6" style="text-align: center;">asinh(city_lights)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Model:</td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+<td style="text-align: center;">(5)</td>
+<td style="text-align: center;">(6)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Variables</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT</td>
+<td style="text-align: center;">0.0062</td>
+<td style="text-align: center;">0.0075</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0039)</td>
+<td style="text-align: center;">(0.0046)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+glot</td>
+<td style="text-align: center;">0.0036</td>
+<td style="text-align: center;">0.0018</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0069)</td>
+<td style="text-align: center;">(0.0078)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+road_distance</td>
+<td style="text-align: center;">-0.0031</td>
+<td style="text-align: center;">-0.0031</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.0060)</td>
+<td style="text-align: center;">(0.0076)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.0007</td>
+<td style="text-align: center;">0.0022</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0028)</td>
+<td style="text-align: center;">(0.0030)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+glot</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.0053</td>
+<td style="text-align: center;">-0.0071</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0075)</td>
+<td style="text-align: center;">(0.0086)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+road_distance</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.0034</td>
+<td style="text-align: center;">-0.0030</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0061)</td>
+<td style="text-align: center;">(0.0082)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.0048<span
+class="math inline"><sup>*</sup></span></td>
+<td style="text-align: center;">0.0045</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0027)</td>
+<td style="text-align: center;">(0.0029)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+glot</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.0090</td>
+<td style="text-align: center;">-0.0073</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0066)</td>
+<td style="text-align: center;">(0.0076)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CTOT <span class="math inline">×</span>
+road_distance</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.0032</td>
+<td style="text-align: center;">-0.0011</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.0055)</td>
+<td style="text-align: center;">(0.0073)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Fixed-effects</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">city</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">year-country</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Varying Slopes</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">year (city)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Fit statistics</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">46,843</td>
+<td style="text-align: center;">28,182</td>
+<td style="text-align: center;">46,843</td>
+<td style="text-align: center;">28,182</td>
+<td style="text-align: center;">46,843</td>
+<td style="text-align: center;">28,182</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sample</td>
+<td style="text-align: center;">full sample</td>
+<td style="text-align: center;">PPC sample</td>
+<td style="text-align: center;">full sample</td>
+<td style="text-align: center;">PPC sample</td>
+<td style="text-align: center;">full sample</td>
+<td style="text-align: center;">PPC sample</td>
+</tr>
+<tr>
+<td style="text-align: left;">R<span
+class="math inline"><sup>2</sup></span></td>
+<td style="text-align: center;">0.89885</td>
+<td style="text-align: center;">0.90021</td>
+<td style="text-align: center;">0.89886</td>
+<td style="text-align: center;">0.90024</td>
+<td style="text-align: center;">0.89885</td>
+<td style="text-align: center;">0.90021</td>
+</tr>
+<tr>
+<td style="text-align: left;">Within R<span
+class="math inline"><sup>2</sup></span></td>
+<td style="text-align: center;">0.00023</td>
+<td style="text-align: center;">0.00044</td>
+<td style="text-align: center;">0.00041</td>
+<td style="text-align: center;">0.00073</td>
+<td style="text-align: center;">0.00030</td>
+<td style="text-align: center;">0.00050</td>
+</tr>
+<tr>
+<td colspan="7" style="text-align: left;"><em>Clustered (city)
+standard-errors in parentheses</em></td>
+</tr>
+<tr>
+<td colspan="7" style="text-align: left;"><em>Signif. Codes: ***: 0.01,
+**: 0.05, *: 0.1</em></td>
+</tr>
+<tr>
+<td colspan="7" style="text-align: left;"><em>In the first two models, CTOT is the average of the 15- to 20-months lagged terms of trade index. In the third and fourth columns it uses the average of the nine- to ten-months lag instead.</em></td>
+</tr>   
+<tr>
+<td colspan="7" style="text-align: left;"><em>In the last two columns it uses the average of the five- to seven-months lag</em></td>
+</tr>    
+</tbody>
+</table>
+
 
 
 
@@ -457,7 +713,7 @@ standard-errors in parentheses</em></td>
 </tbody>
 </table>
 
-
+<div style="height : 40px; "></div>div>
 
 <table>
 <caption>Table A9: Effect of different language families - six-month
