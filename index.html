@@ -74,120 +74,44 @@ $$
 
 <Table A2: Baseline regressions with single month lag>
 $$
-<table>
-<tbody>
-<tr>
-<td style="text-align: left;">Dependent Variable:</td>
-<td colspan="2" style="text-align: center;">asinh(city_lights)</td>
-</tr>
-<tr>
-<td style="text-align: left;">Model:</td>
-<td style="text-align: center;">(1)</td>
-<td style="text-align: center;">(2)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><em>Variables</em></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">lag18</td>
-<td style="text-align: center;">0.0154<span
-class="math inline"><sup>* * *</sup></span></td>
-<td style="text-align: center;">0.0151<span
-class="math inline"><sup>* * *</sup></span></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">(0.0044)</td>
-<td style="text-align: center;">(0.0039)</td>
-</tr>
-<tr>
-<td style="text-align: left;">lag18 <span class="math inline">×</span>
-glot</td>
-<td style="text-align: center;">-0.0058</td>
-<td style="text-align: center;">0.0142</td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">(0.0123)</td>
-<td style="text-align: center;">(0.0100)</td>
-</tr>
-<tr>
-<td style="text-align: left;">lag18 <span class="math inline">×</span>
-distance_to_port_1000km</td>
-<td style="text-align: center;">0.0018</td>
-<td style="text-align: center;">-0.0116<span
-class="math inline"><sup>* * *</sup></span></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">(0.0064)</td>
-<td style="text-align: center;">(0.0041)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><em>Fixed-effects</em></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">city</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;">year-country</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><em>Varying Slopes</em></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">year (city)</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><em>Fit statistics</em></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">Observations</td>
-<td style="text-align: center;">551,347</td>
-<td style="text-align: center;">327,704</td>
-</tr>
-<tr>
-<td style="text-align: left;">R<span
-class="math inline"><sup>2</sup></span></td>
-<td style="text-align: center;">0.91481</td>
-<td style="text-align: center;">0.89134</td>
-</tr>
-<tr>
-<td style="text-align: left;">Within R<span
-class="math inline"><sup>2</sup></span></td>
-<td style="text-align: center;">0.00113</td>
-<td style="text-align: center;">0.00207</td>
-</tr>
-<tr>
-<td colspan="3" style="text-align: left;"><em>Clustered (city)
-standard-errors in parentheses</em></td>
-</tr>
-<tr>
-<td colspan="3" style="text-align: left;"><em>Signif. Codes: ***: 0.01,
-**: 0.05, *: 0.1</em></td>
-</tr>
-</tbody>
-</table>
-$$
-
-<Table A3: Baseline regressions with alternative fixed effects (full sample)>
-$$
 \begingroup
 \centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{asinh(city\_lights)}\\
+   Model:                                        & (1)            & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   lag18                                         & 0.0154$^{***}$ & 0.0151$^{***}$\\   
+                                                 & (0.0044)       & (0.0039)\\   
+   lag18 $\times$ glot                           & -0.0058        & 0.0142\\   
+                                                 & (0.0123)       & (0.0100)\\   
+   lag18 $\times$ distance\_to\_port\_1000km     & 0.0018         & -0.0116$^{***}$\\   
+                                                 & (0.0064)       & (0.0041)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   city                                          & Yes            & Yes\\  
+   year-country                                  & Yes            & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   year (city)                                   & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                  & 551,347        & 327,704\\  
+   R$^2$                                         & 0.91481        & 0.89134\\  
+   Within R$^2$                                  & 0.00113        & 0.00207\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+$$
+
+$$
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Table A3: Baseline regressions with alternative fixed effects (full sample)}
 \begin{tabular}{lcccc}
    \tabularnewline \midrule \midrule
    Dependent Variable: & \multicolumn{4}{c}{asinh(city\_lights)}\\
@@ -211,14 +135,16 @@ $$
    year (city)                                       & Yes             &                &                 & \\  
    \midrule
    \emph{Fit statistics}\\
-   Observations                                      & 551,347         & 551,347        & 551,347         & 551,347\\  
+   Observations                                      & 551,347         & 551,347        & 551,347         & 551,347\\ 
+   Sample                                            & full sample & full sample & full sample & full sample\\
    R$^2$                                             & 0.90957         & 0.89961        & 0.89035         & 0.90282\\  
    Within R$^2$                                      & 0.01913         & 0.00117        & 0.01948         & 0.00119\\  
    \midrule \midrule
    \multicolumn{5}{l}{\emph{Clustered (city) standard-errors in parentheses}}\\
    \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
 \end{tabular}
-\par\endgroup
+\par
+\end{table}
 $$
 
 <Table A4: Baseline regressions with alternative fixed effects (PPC sample)>
